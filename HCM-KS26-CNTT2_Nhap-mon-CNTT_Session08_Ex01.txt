@@ -1,0 +1,16 @@
+Bài 1 : Xử lý xung đột tài liệu trên GitHub
+
+Phần 1. Phân tích:
+
+2 sai lầm trong tư duy của Nam :
+
+-Đánh giá cao file Word vì có giao diện trực quan (thanh công cụ đổi font chữ, màu sắc) nhưng GitHub thì vận hành dựa trên cơ chế theo dõi dòng lệnh và lịch sử thay đổi (version control), chỉ hỗ trợ các tệp mã nguồn như (.js,.ps1,.md, và các tệp khác) còn .docx là một gói nén XML có định dạng nhị phân
+
+-Nam cho rằng Markdown chỉ là văn bản thô, không thể tạo được tài liệu chuyên nghiệp"
+
+Giải thích Markdown an toàn và nhẹ hơn:
+
+-Dung lượng: Markdown là văn bản thuần túy (plain text), dung lượng cực kỳ nhỏ (chỉ vài KB), giúp việc đồng bộ qua Git diễn ra nhanh chóng, không làm nặng kho chứa (repository)
+
+-File docx khuyết điểm so với Markdown: nếu file .docx thiếu 1 byte dữ liệu thì toàn bộ cấu trúc file nén bên trong sẽ bị phá vỡ, khiến Microsoft Word báo lỗi ("The file is corrupted"). Còn Markdown file Vì là văn bản thô, nếu file Markdown bị mất 1 byte ,thì sẽ chỉ bị mất một vài ký tự còn toàn bộ dữ liệu vẫn còn đó và vẫn đọc được bình thường không làm hỏng cả file như docx.
+
